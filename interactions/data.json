@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Cloud XR with Hand Tracking",
+        "description": "Developed as a proof of concept for a talk given at Nvidia's GTC conference, this demo showcased how hand tracking data processed on a standalone headset could be transmitted to a server running CloudXR.",
+        "company": "Ultraleap",
+        "videoUrl": "CloudXR.mp4"
+    },
+    {
+        "title": "Combining Eye and Hand Tracking",
+        "description": "Part of an early collaboration with Tobii exploring the integration of hand tracking and eye tracking. In this demo, an orange ball tracks the user's gaze in the virtual world.</br></br>",
+        "company": "Ultraleap",
+        "videoUrl": "EyeHand.mp4"
+    },
+    {
+        "title": "Interactive Home Surfaces",
+        "description": "Designed as part of a proof of concept to explore natural user interfaces for smart homes. This demo utilized a short-throw projector with an attached hand-tracking device to enable natural interactions on any projected surface.",
+        "company": "Ultraleap",
+        "videoUrl": "InteractiveSurface.mp4"
+    },
+    {
+        "title": "Tilt5 with Hand Tracking",
+        "description": "Developed to explore potential collaboration with Tilt5, this project investigated the integration of hand tracking into augmented tabletop experiences.</br></br>",
+        "company": "Ultraleap",
+        "videoUrl": "Tilt5.mp4"
+    },
+    {
+        "title": "Hand Tracking over the Network with Embedded Compute",
+        "description": "Part of an exploration into embedded compute and networked hand tracking data, aiming to enable hand tracking on compute/IO-limited devices such as smartphones and media players.",
+        "company": "Ultraleap",
+        "videoUrl": "Streamedhanddata.mp4"
+    },
+    {
+        "title": "VR Desktop Computing",
+        "description": "Designed to explore accessing traditional file systems in virtual reality using hand tracking interfaces exclusively.</br></br</br></br></br>",
+        "company": "Ultraleap",
+        "videoUrl": "VRdesktop.mp4"
+    }
+]

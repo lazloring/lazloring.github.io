@@ -11,6 +11,39 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+		// Function to fetch JSON data
+		async function fetchData() {
+			try {
+				const response = await fetch('interactions/data.json');
+				const data = await response.json();
+				const content = document.getElementById('content');
+				i = 0;
+				data.forEach(item => {
+					i++;
+					const section = document.createElement('section');
+					section.innerHTML = `
+															<span class="icon major far fa-hand-paper"></span>
+															<h3>${item.title}</h3>
+															<p><i>${item.company}</i></br>${item.description}</p>
+															<video controls="">
+																<source src="https://github.com/lazloring/lazloring.github.io/raw/main/interactions/${item.videoUrl}" type="video/mp4" allowfullscreen>
+															</video>
+														`;
+					content.appendChild(section);
+				});
+				if (i % 2 == 1) {
+					const section = document.createElement('section');
+					content.appendChild(section);
+				}
+			} catch (error) {
+				console.error('Error fetching data:', error);
+			}
+		}
+
+		// Call the fetchData function when the page loads
+		window.onload = fetchData;
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -34,55 +67,7 @@
 						<div class="inner">
 							<h1 class="major">Interaction Explorations</h1>
 							<p>The following are interaction tests used to explore natural user interfaces in a variety of mediums</p>
-							<div class="features">
-								<section>
-									<span class="icon major far fa-hand-paper"></span>
-									<h3>Cloud XR with Hand Tracking</h3>
-									<p>DESCRIPTION<br />Company: <i>Ultraleap</i></p>
-									<video controls="">
-										<source src="https://github.com/lazloring/lazloring.github.io/raw/main/interactions/CloudXR.mp4" type="video/mp4" allowfullscreen></iframe>
-									</video>
-								</section>
-								<section>
-									<span class="icon major far fa-hand-paper"></span>
-									<h3>Combining Eye and Hand Tracking</h3>
-									<p>DESCRIPTION<br />Company: <i>Ultraleap</i></p>
-									<video controls="">
-										<source src="https://github.com/lazloring/lazloring.github.io/raw/main/interactions/EyeHand.mp4" type="video/mp4" allowfullscreen></iframe>
-									</video>
-								</section>
-								<section>
-									<span class="icon major far fa-hand-paper"></span>
-									<h3>Interactive Home Surfaces</h3>
-									<p>DESCRIPTION<br />Company: <i>Ultraleap</i></p>
-									<video controls="">
-										<source src="https://github.com/lazloring/lazloring.github.io/raw/main/interactions/InteractiveSurface.mp4" type="video/mp4" allowfullscreen></iframe>
-									</video>
-								</section>
-								<section>
-									<span class="icon major far fa-hand-paper"></span>
-									<h3>Tilt5 with Hand Tracking</h3>
-									<p>DESCRIPTION<br />Company: <i>Ultraleap</i></p>
-									<video controls="">
-										<source src="https://github.com/lazloring/lazloring.github.io/raw/main/interactions/Tilt5.mp4" type="video/mp4" allowfullscreen></iframe>
-									</video>
-								</section>
-								<section>
-									<span class="icon major far fa-hand-paper"></span>
-									<h3>Hand Tracking over the network with embedded compute</h3>
-									<p>DESCRIPTION<br />Company: <i>Ultraleap</i></p>
-									<video controls="">
-										<source src="https://github.com/lazloring/lazloring.github.io/raw/main/interactions/Streamedhanddata.mp4" type="video/mp4" allowfullscreen></iframe>
-									</video>
-								</section>
-								<section>
-									<span class="icon major far fa-hand-paper"></span>
-									<h3>VR Desktop computing</h3>
-									<p>DESCRIPTION<br />Company: <i>Ultraleap</i></p>
-									<video controls="">
-										<source src="https://github.com/lazloring/lazloring.github.io/raw/main/interactions/VRdesktop.mp4" type="video/mp4" allowfullscreen></iframe>
-									</video>
-								</section>
+							<div id="content" class="features"/>
 							</div>
 						</div>
 					</section>
