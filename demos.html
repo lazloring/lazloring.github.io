@@ -15,16 +15,49 @@
 	<body class="is-preload">
 
 		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Lazlo Ring, PhD</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="interactions.html">Interaction Explorations</a></li>
-						<li><a href="publications.html">Publications</a></li>
-					</ul>
-				</nav>
-			</header>
+		<header id="header">
+			<a href="index.html" class="title">Lazlo Ring, PhD</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="interactions.html">Interaction Explorations</a></li>
+					<li><a href="publications.html">Publications</a></li>
+				</ul>
+			</nav>
+			<script>
+				// Function to fetch JSON data
+				async function fetchData() {
+					try {
+						const response = await fetch('demos/data.json');
+						const data = await response.json();
+						const content = document.getElementById('content');
+						i = 0;
+						data.forEach(item => {
+							i++;
+							const section = document.createElement('section');
+							section.innerHTML = `
+																	<span class="icon major far fa-hand-paper"></span>
+																	<h3>${item.title}</h3>
+																	<p><i>${item.company}</i></br>${item.description}</p>
+																	<video controls="">
+																		<source src="https://github.com/lazloring/lazloring.github.io/raw/main/videos/${item.videoUrl}" type="video/mp4" allowfullscreen>
+																	</video>
+																`;
+							content.appendChild(section);
+						});
+						if (i % 2 == 1) {
+							const section = document.createElement('section');
+                            content.appendChild(section);
+						}
+					} catch (error) {
+						console.error('Error fetching data:', error);
+					}
+				}
+
+				// Call the fetchData function when the page loads
+				window.onload = fetchData;
+			</script>
+		</header>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -34,88 +67,7 @@
 						<div class="inner">
 							<h1 class="major">Tradeshow Demos</h1>
 							<p>The following are a selection of demos I development to showcase techinical superiority and potential use cases for the products I was developing at the time. These demos were presented to hundreds of customers at high profile tradeshows, such as CES, IAAPA and AWE.</p>
-							<div class="features">
-								<section>
-									<span class="icon major far fa-hand-paper"></span>
-									<h3>Barista Training</h3>
-									<p>DESCRIPTION<br />Company: <i>Ultraleap</i></p>
-									<video controls="">
-										<source src="https://github.com/lazloring/lazloring.github.io/raw/main/videos/Barista.mp4" type="video/mp4" allowfullscreen></iframe>
-									</video>
-								</section>
-								<section>
-									<span class="icon major far fa-hand-paper"></span>
-									<h3>Crystal Cave</h3>
-									<p>DESCRIPTION<br />Company: <i>Ultraleap</i></p>
-									<video controls="">
-										<source src="https://github.com/lazloring/lazloring.github.io/raw/main/videos/CrystalCave.mp4" type="video/mp4" allowfullscreen></iframe>
-									</video>
-								</section>
-								<section>
-									<span class="icon major far fa-hand-paper"></span>
-									<h3>Vista</h3>
-									<p>DESCRIPTION<br />Company: <i>Ultraleap</i></p>
-									<video controls="">
-										<source src="https://github.com/lazloring/lazloring.github.io/raw/main/videos/Vista.mp4" type="video/mp4" allowfullscreen></iframe>
-									</video>
-								</section>
-								<section>
-									<span class="icon major far fa-hand-paper"></span>
-									<h3>XR Launcher and Applications</h3>
-									<p>DESCRIPTION<br />Company: <i>Ultraleap</i></p>
-									<video controls="">
-										<source src="https://github.com/lazloring/lazloring.github.io/raw/main/videos/PicoLoop.mp4" type="video/mp4" allowfullscreen></iframe>
-									</video>
-								</section>
-								<section>
-									<span class="icon major far fa-hand-paper"></span>
-									<h3>Spider</h3>
-									<p>DESCRIPTION<br />Company: <i>Ultraleap</i></p>
-									<video controls="">
-										<source src="https://github.com/lazloring/lazloring.github.io/raw/main/videos/Spider.mp4" type="video/mp4" allowfullscreen></iframe>
-									</video>
-								</section>
-								<section>
-									<span class="icon major far fa-hand-paper"></span>
-									<h3>Flight Crew Training</h3>
-									<p>DESCRIPTION<br />Company: <i>Ultraleap</i></p>
-									<video controls="">
-										<source src="https://github.com/lazloring/lazloring.github.io/raw/main/videos/VRFlightCrew.mp4" type="video/mp4" allowfullscreen></iframe>
-									</video>
-								</section>
-								<section>
-									<span class="icon major far fa-hand-paper"></span>
-									<h3>Trackball Demo</h3>
-									<p>DESCRIPTION<br />Company: <i>Ultraleap</i></p>
-									<video controls="">
-										<source src="https://github.com/lazloring/lazloring.github.io/raw/main/videos/MarsExample.mp4" type="video/mp4" allowfullscreen></iframe>
-									</video>
-								</section>
-								<section>
-									<span class="icon major far fa-hand-paper"></span>
-									<h3>Product Customization</h3>
-									<p>DESCRIPTION<br />Company: <i>Ultraleap</i></p>
-									<video controls="">
-										<source src="https://github.com/lazloring/lazloring.github.io/raw/main/videos/Columbus.mp4" type="video/mp4" allowfullscreen></iframe>
-									</video>
-								</section>
-								<section>
-									<span class="icon major far fa-hand-paper"></span>
-									<h3>LBE Showcase</h3>
-									<p>DESCRIPTION<br />Company: <i>Ultraleap</i></p>
-									<video controls="">
-										<source src="https://github.com/lazloring/lazloring.github.io/raw/main/videos/XStudio.mp4" type="video/mp4" allowfullscreen></iframe>
-									</video>
-								</section>
-								<section>
-									<span class="icon major far fa-hand-paper"></span>
-									<h3>Virtual Therapist</h3>
-									<p>DESCRIPTION<br /><i>PhD Thesis - Northeastern University</i></p>
-									<video controls="">
-										<source src="https://github.com/lazloring/lazloring.github.io/raw/main/videos/Thesis.mp4" type="video/mp4" allowfullscreen></iframe>
-									</video>
-								</section>
-							</div>
+							<div id="content" class="features"/>
 						</div>
 					</section>
 

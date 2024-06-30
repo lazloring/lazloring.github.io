@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Barista Training",
+        "description": "Developed as a proof of concept for how VR training can be utilized in the food service industry, this demo illustrates how hand tracking can create immersive training experiences.</br></br>",
+        "company": "Ultraleap",
+        "videoUrl": "Barista.mp4"
+    },
+    {
+        "title": "Crystal Cave",
+        "description": "A two-player VR experience where participants navigate a 20'x10' area, interacting with eight mid-air haptic devices. This was the first public demonstration of integrating hand tracking data from multiple networked devices.",
+        "company": "Ultraleap",
+        "videoUrl": "CrystalCave.mp4"
+    },
+    {
+        "title": "Vista",
+        "description": "Designed to demonstrate the effectiveness of combining eye tracking and hand tracking in VR experiences. This project showcased how these technologies could be used to control future smart homes.</br></br>",
+        "company": "Ultraleap",
+        "videoUrl": "Vista.mp4"
+    },
+    {
+        "title": "XR Launcher and Applications",
+        "description": "The first public demonstration of running Ultraleap's hand tracking on XR2-based devices. This project featured a series of classic Leap Motion demos ported to Android in a closed-loop system, highlighting hand tracking as the primary input method.",
+        "company": "Ultraleap",
+        "videoUrl": "PicoLoop.mp4"
+    },
+    {
+        "title": "Spider",
+        "description": "A proof of concept for an XR health company, this demo showcased how hand tracking can be used in immersive mental health experiences, specifically for overcoming phobias.",
+        "company": "Ultraleap",
+        "videoUrl": "Spider.mp4"
+    },
+    {
+        "title": "Flight Crew Training",
+        "description": "Developed to explore hand tracking-based locomotion techniques in VR. This project also featured the first public demonstration of hands being virtually blocked by elements in the scene.",
+        "company": "Ultraleap",
+        "videoUrl": "VRFlightCrew.mp4"
+    },
+    {
+        "title": "Trackball Demo",
+        "description": "Created to showcase various interfaces using mid-air haptics, this demo highlighted different virtual hand-tracked interfaces such as trackballs, sliders, and knobs.",
+        "company": "Ultraleap",
+        "videoUrl": "MarsExample.mp4"
+    },
+    {
+        "title": "Product Customization",
+        "description": "Designed to demonstrate product exploration and customization in retail shopping.</br></br></br>",
+        "company": "Ultraleap",
+        "videoUrl": "Columbus.mp4"
+    },
+    {
+        "title": "LBE Showcase",
+        "description": "Developed in collaboration with an LBE company to illustrate how hand tracking and mid-air haptics can enhance VR experiences.</br></br></br>",
+        "company": "Ultraleap",
+        "videoUrl": "XStudio.mp4"
+    },
+    {
+        "title": "Virtual Therapist",
+        "description": "Part of my thesis work, this embodied conversational agent used both verbal and non-verbal behavior to react to a user's emotional state during a multi-week depression counseling session.",
+        "company": "PhD Thesis - Northeastern University",
+        "videoUrl": "Thesis.mp4"
+    }
+]
