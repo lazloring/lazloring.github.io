@@ -7,7 +7,7 @@
     },
     {
         "title": "Combining Eye and Hand Tracking",
-        "description": "Part of an early collaboration with Tobii exploring the integration of hand tracking and eye tracking. In this demo, an orange ball tracks the user's gaze in the virtual world.</br></br>",
+        "description": "Part of an early collaboration with Tobii exploring the combination of hand tracking and eye tracking. In this demo, an orange ball tracks the user's gaze in the virtual world.</br></br>",
         "company": "Ultraleap",
         "videoUrl": "EyeHand.mp4"
     },
@@ -18,20 +18,20 @@
         "videoUrl": "InteractiveSurface.mp4"
     },
     {
-        "title": "Tilt5 with Hand Tracking",
+        "title": "Interactive Tabletop Experiences",
         "description": "Developed to explore potential collaboration with Tilt5, this project investigated the integration of hand tracking into augmented tabletop experiences.</br></br>",
         "company": "Ultraleap",
         "videoUrl": "Tilt5.mp4"
     },
     {
         "title": "Hand Tracking over the Network with Embedded Compute",
-        "description": "Part of an exploration into embedded compute and networked hand tracking data, aiming to enable hand tracking on compute/IO-limited devices such as smartphones and media players.",
+        "description": "Part of an exploration into embedded compute and networked hand tracking data that enabled hand tracking on compute/IO-limited devices such as smartphones and media players.",
         "company": "Ultraleap",
         "videoUrl": "Streamedhanddata.mp4"
     },
     {
         "title": "VR Desktop Computing",
-        "description": "Designed to explore accessing traditional file systems in virtual reality using hand tracking interfaces exclusively.</br></br</br></br></br>",
+        "description": "Designed to explore accessing traditional file systems in virtual reality using hand tracking interfaces.</br></br</br></br></br>",
         "company": "Ultraleap",
         "videoUrl": "VRdesktop.mp4"
     }

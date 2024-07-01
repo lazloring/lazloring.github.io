@@ -37,7 +37,7 @@
     },
     {
         "title": "Trackball Demo",
-        "description": "Created to showcase various interfaces using mid-air haptics, this demo highlighted different virtual hand-tracked interfaces such as trackballs, sliders, and knobs.",
+        "description": "Created to showcase various interfaces using mid-air haptics, this demo highlighted different virtual hand-tracking interfaces such as trackballs, sliders, and knobs.",
         "company": "Ultraleap",
         "videoUrl": "MarsExample.mp4"
     },
